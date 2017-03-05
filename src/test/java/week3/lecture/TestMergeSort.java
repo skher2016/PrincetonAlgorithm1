@@ -17,7 +17,7 @@ public class TestMergeSort {
 		MergeSort obj = new MergeSort();
 		Comparable[] actual = obj.sort(input);
 		
-		assertEquals("[a, b, c, d, e, f, g, h, i]", Arrays.toString(input));
+		assertEquals("[a, b, c, d, e, f, g, h, i]", Arrays.toString(actual));
 	}
 	
 	@Test
@@ -27,7 +27,7 @@ public class TestMergeSort {
 		MergeSort obj = new MergeSort();
 		Comparable[] actual = obj.sort(input);
 		
-		assertEquals("[1, 2, 4, 6, 8, 11]", Arrays.toString(input));
+		assertEquals("[1, 2, 4, 6, 8, 11]", Arrays.toString(actual));
 	}
 	@Test(expected=IllegalArgumentException.class)
 	public void shouldNotSortGivenInvalidInput(){
